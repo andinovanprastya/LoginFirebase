@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "1065160668389",
+    "firebase_url": "https://uts-kosan.firebaseio.com",
+    "project_id": "uts-kosan",
+    "storage_bucket": "uts-kosan.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1065160668389:android:3c1e4ff9b7ec8499",
+        "android_client_info": {
+          "package_name": "com.example.andinovanprastya.loginfirebase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1065160668389-s05f759tbgvhh715dbsapra82vl5ikq6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAZa1pV8q3rUMjJTPuA8kwckb-fJlKXdbc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
