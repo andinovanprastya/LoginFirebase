@@ -43,7 +43,7 @@ public class EmailPasswordActivity extends AppCompatActivity implements
 
         // Buttons
         findViewById(R.id.emailSignInButton).setOnClickListener(this);
-        findViewById(R.id.emailCreateAccountButton).setOnClickListener(this);
+//        findViewById(R.id.emailCreateAccountButton).setOnClickListener(this);
         findViewById(R.id.signOutButton).setOnClickListener(this);
         findViewById(R.id.verifyEmailButton).setOnClickListener(this);
 

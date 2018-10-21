@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:id="@+id/detail_frag"
-    android:name="com.example.andinovanprastya.loginfirebase.KamarDetailFragment"
+   android:name="com.example.andinovanprastya.loginfirebase.fragment.KamarDetailFragment"
     tools:context=".DetailActivity">
 
 </fragment>

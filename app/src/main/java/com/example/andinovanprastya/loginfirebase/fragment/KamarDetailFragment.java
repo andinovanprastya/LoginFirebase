@@ -1,4 +1,4 @@
-package com.example.andinovanprastya.loginfirebase;
+package com.example.andinovanprastya.loginfirebase.fragment;
 
 import android.content.Context;
 import android.net.Uri;
@@ -10,6 +10,8 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.example.andinovanprastya.loginfirebase.R;
+import com.example.andinovanprastya.loginfirebase.model.Kamar;
 
 
 public class KamarDetailFragment extends Fragment {

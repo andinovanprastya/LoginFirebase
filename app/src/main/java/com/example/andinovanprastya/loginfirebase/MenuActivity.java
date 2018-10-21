@@ -17,15 +17,19 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Toast;
 
-public class HomeActivity extends AppCompatActivity
-        implements NavigationView.OnNavigationItemSelectedListener , KamarFragment.Listener{
+import com.example.andinovanprastya.loginfirebase.fragment.KamarDetailFragment;
+import com.example.andinovanprastya.loginfirebase.fragment.KamarFragment;
+import com.example.andinovanprastya.loginfirebase.fragment.SignoutFragment;
+
+public class MenuActivity extends AppCompatActivity
+        implements NavigationView.OnNavigationItemSelectedListener,  KamarFragment.Listener {
 
     private FragmentManager fm;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_home);
+        setContentView(R.layout.activity_menu);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
@@ -47,9 +51,11 @@ public class HomeActivity extends AppCompatActivity
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
 
-        fm = getSupportFragmentManager();
-        fm.beginTransaction().replace(R.id.fm_pager_nav, new KamarFragment()).commit();
-        getSupportActionBar().setTitle("kamar");
+
+//        INI DIHAPUS KARENA KALO ADA INI HALAMAN JD GABISA LANDSCAPE
+//        fm = getSupportFragmentManager();
+//        fm.beginTransaction().replace(R.id.fm_pager_nav, new KamarFragment()).commit();
+//        getSupportActionBar().setTitle("kamar");
     }
 
     @Override
@@ -65,7 +71,7 @@ public class HomeActivity extends AppCompatActivity
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.home, menu);
+        getMenuInflater().inflate(R.menu.menu, menu);
         return true;
     }
 
@@ -97,7 +103,12 @@ public class HomeActivity extends AppCompatActivity
 
         } else if (id == R.id.nav_comingsoon) {
 
+        } else if (id == R.id.nav_send) {
+            fm = getSupportFragmentManager();
+            fm.beginTransaction().replace(R.id.fm_pager_nav, new SignoutFragment()).commit();
+            getSupportActionBar().setTitle("Signout");
         }
+
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
