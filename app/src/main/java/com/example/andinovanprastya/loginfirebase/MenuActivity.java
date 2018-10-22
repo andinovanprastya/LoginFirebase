@@ -99,7 +99,7 @@ public class MenuActivity extends AppCompatActivity
         if (id == R.id.nav_kamar) {
             fm = getSupportFragmentManager();
             fm.beginTransaction().replace(R.id.fm_pager_nav, new KamarFragment()).commit();
-            getSupportActionBar().setTitle("kamar");
+            getSupportActionBar().setTitle("Tipe Kamar");
 
         } else if (id == R.id.nav_comingsoon) {
 
@@ -129,7 +129,7 @@ public class MenuActivity extends AppCompatActivity
 
             ft.commit();
         }else{
-            Toast.makeText(this, "Item"+id+ "di klik", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Memilih kamar dengan id "+ id, Toast.LENGTH_SHORT).show();
             Intent i = new Intent(this.getApplicationContext(), DetailActivity.class);
             Bundle b = new Bundle();
             b.putLong("id", id);
