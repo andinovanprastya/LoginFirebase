@@ -73,7 +73,6 @@ public class SignoutFragment extends Fragment {
         FirebaseAuth.getInstance().addAuthStateListener(mAuth);
     }
 
-
     @Override
     public void onStop() {
         super.onStop();
@@ -104,40 +103,10 @@ public class SignoutFragment extends Fragment {
     }
 
 
-
     @Override
     public void onDetach() {
         super.onDetach();
 
     }
-
-
-    public interface OnFragmentInteractionListener {
-        // TODO: Update argument type and name
-        void onFragmentInteraction(Uri uri);
-    }
-
-//    private void signOut() {
-//        mAuth.signOut();
-//    }
-
-//    private void signOut(){
-//        if(mAuth != null){
-//            mAuth.signOut();
-//        }
-//    }
-
-
-
-//    @Override
-//    public void onClick(View v) {
-//        int i = v.getId();
-//        switch (i){
-//            case R.id.signOutButton2:
-//                signOut();
-//                break;
-//        }
-//    }
-
 
 }
