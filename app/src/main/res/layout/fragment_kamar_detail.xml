@@ -8,29 +8,40 @@
     tools:context=".fragment.KamarDetailFragment">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:id="@+id/textTitle"
-        android:text="Tipe Kamar" />
+    <!--<ScrollView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent">-->
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="fasilitas yang ada"
-        android:id="@+id/textFasilitas"/>
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:orientation="vertical">-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/textTitle"
+                android:text="Tipe Kamar" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="harga ini"
-        android:id="@+id/textPrice"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="fasilitas yang ada"
+                android:id="@+id/textFasilitas"/>
 
-    <ImageView
-        android:id="@+id/fotoKamar"
-        android:src="@drawable/star"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="harga ini"
+                android:id="@+id/textPrice"/>
+
+            <ImageView
+                android:id="@+id/fotoKamar"
+                android:src="@drawable/star"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        <!--</LinearLayout>-->
+    <!--</ScrollView>-->
+
 
 </LinearLayout>

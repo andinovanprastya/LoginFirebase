@@ -40,8 +40,6 @@ public class LoginActivity extends AppCompatActivity {
         inputPassword = (EditText)findViewById(R.id.password);
         progressBar = (ProgressBar)findViewById(R.id.progressBar);
 
-        auth = FirebaseAuth.getInstance();
-
         btnSignUp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

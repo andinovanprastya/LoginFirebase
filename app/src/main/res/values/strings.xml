@@ -97,5 +97,5 @@
     <string name="minim_password">Password kurang panjang</string>
     <string name="btn_forgot_password">Forgot your password?</string>
     <string name="action_sign_in_short">Register</string>
-    <string name="btn_link_to_login">Login Here !</string>
+    <string name="btn_link_to_login">Login</string>
 </resources>

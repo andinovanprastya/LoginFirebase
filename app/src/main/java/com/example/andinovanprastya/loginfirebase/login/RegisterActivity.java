@@ -37,6 +37,14 @@ public class RegisterActivity extends AppCompatActivity {
         inputPassword = (EditText)findViewById(R.id.password);
         progressBar = (ProgressBar)findViewById(R.id.progressBar);
 
+        btnSignIn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(RegisterActivity.this,LoginActivity.class);
+                startActivity(i);
+            }
+        });
+
         btnSignUp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
