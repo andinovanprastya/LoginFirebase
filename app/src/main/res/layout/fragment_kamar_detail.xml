@@ -40,6 +40,14 @@
                 android:src="@drawable/star"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent" />
+
+            <!--<com.example.imagewatermark2.ImageWaterMarkView-->
+                <!--android:id="@+id/fotoKamar"-->
+                <!--android:src="@drawable/star"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent">-->
+
+            <!--</com.example.imagewatermark2.ImageWaterMarkView>-->
         <!--</LinearLayout>-->
     <!--</ScrollView>-->
 
